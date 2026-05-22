@@ -14,6 +14,8 @@ ng serve
 
 - Node.js: `v25.9.0`
 - Angular CLI: `v21.2.12`
+- Angular: `21.2.14`
+- npm: `11.12.1`
 
 ## Technical Notes
 
