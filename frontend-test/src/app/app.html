@@ -7,11 +7,19 @@
   <main class="content">
 
     <section class="list-section">
-      <app-booking-list></app-booking-list>
+
+      <app-booking-list
+        (bookingSelected)="onBookingSelected($event)">
+      </app-booking-list>
+
     </section>
 
     <section class="detail-section">
-      <app-booking-detail></app-booking-detail>
+
+      <app-booking-detail
+        [booking]="selectedBooking">
+      </app-booking-detail>
+
     </section>
 
   </main>

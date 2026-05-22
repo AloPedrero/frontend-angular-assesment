@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+
+import { Booking } from './models/booking.interface';
+
 import { BookingList } from './components/booking-list/booking-list';
 import { BookingDetail } from './components/booking-detail/booking-detail';
 
@@ -13,5 +16,11 @@ import { BookingDetail } from './components/booking-detail/booking-detail';
   styleUrl: './app.scss'
 })
 export class App {
+
+  selectedBooking: Booking | null = null;
+
+  onBookingSelected(booking: Booking): void {
+    this.selectedBooking = booking;
+  }
 
 }

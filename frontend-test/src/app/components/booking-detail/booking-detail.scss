@@ -1,0 +1,39 @@
+.detail-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.detail-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.detail-card p {
+  margin: 0.8rem 0;
+  color: #4b5563;
+}
+
+.reserve-button {
+  margin-top: 1.5rem;
+
+  border: none;
+  background-color: #16a34a;
+  color: white;
+
+  padding: 0.8rem 1.2rem;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: background-color 0.2s;
+}
+
+.reserve-button:hover {
+  background-color: #15803d;
+}

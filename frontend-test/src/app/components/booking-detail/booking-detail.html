@@ -1,1 +1,30 @@
-<p>booking-detail works!</p>
+<div
+  class="detail-card"
+  *ngIf="booking"
+>
+
+  <h2>{{ booking.className }}</h2>
+
+  <p>
+    <strong>Instructor:</strong>
+    {{ booking.instructor }}
+  </p>
+
+  <p>
+    <strong>Horario:</strong>
+    {{ booking.schedule }}
+  </p>
+
+  <p>
+    <strong>Cupos:</strong>
+    {{ booking.availableSpots }} disponibles
+  </p>
+
+  <button
+    class="reserve-button"
+    (click)="reserveSpot()"
+  >
+    Reservar
+  </button>
+
+</div>

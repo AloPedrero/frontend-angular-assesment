@@ -1,9 +1,22 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
+
+import { Booking } from '../../models/booking.interface';
 
 @Component({
   selector: 'app-booking-detail',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './booking-detail.html',
   styleUrl: './booking-detail.scss',
 })
-export class BookingDetail {}
+export class BookingDetail {
+
+  @Input()
+  booking: Booking | null = null;
+
+  reserveSpot(): void {
+    alert('Booking confirmed!');
+  }
+
+}
